@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <video id="myvid" style="border:1px solid black" src="media/Big Buck Bunny trailer.mp4" poster="images/wallpaper.jpg"></video>
+    <br>
+    <div style="display:inline-block">
+    <input type="range" min="0" max="100" step="1" style= "width:400px" value="0"  id="seekslider"> 
+    <span id="curtimetext">00:00</span> / <span id="durtimetext">00:00</span>
+</div>
+    <br><br>
+    <div style="display:inline-block;">
+    <button onclick="play()" id="play">play</button>
+    <button style="display:none;" onclick="pause()" id="pause">pause</button>
+</div>
+    <button onclick="stop()" id="stop">stop</button>
+    <button onclick="backward()" id="back"><<</button>
+    <button onclick="back5()" id="back5"><</button>
+    <button onclick="front5()" id="front5">></button>
+    <button onclick="forward()" id="front">>></button>
+    <input type="range" id="volumeupdown" min="0" step="0.1" max="1">
+    <div style="display:inline-block;">
+    <button onclick="mute()" id="mute">mute</button>
+    <button style="display:none;" onclick="unmute()" id="unmute">unmute</button>
+</div>
+    <button onclick="screen()" id="fullscreen">screen</button>
+    <br>
+    <br>
+   speed : <input type="range" name="" id="speed" min="0.1" max="5.1">
+    
+    
+</body>
+<script src="js/script.js"></script>
+</html>
